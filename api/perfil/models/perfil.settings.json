@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "perfil",
+  "info": {
+    "name": "Perfil",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ubicacion": {
+      "type": "string",
+      "default": "Medellín"
+    },
+    "perfil": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 280
+    },
+    "correo": {
+      "type": "email",
+      "required": true
+    },
+    "telefono": {
+      "type": "biginteger",
+      "required": false
+    },
+    "github_link": {
+      "type": "string",
+      "required": true
+    },
+    "foto_perfil": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

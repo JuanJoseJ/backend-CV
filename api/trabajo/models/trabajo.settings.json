@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trabajo",
+  "info": {
+    "name": "Trabajo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "empresa": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "fecha_inicio": {
+      "type": "date",
+      "required": true
+    },
+    "fecha_finalizacion": {
+      "type": "date"
+    },
+    "anotaciones": {
+      "type": "richtext"
+    }
+  }
+}
