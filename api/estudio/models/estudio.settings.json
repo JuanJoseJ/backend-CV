@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "estudio",
   "info": {
-    "name": "estudio"
+    "name": "estudio",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "instituto": {
+    "nombre": {
       "type": "string",
       "required": true,
       "unique": true
@@ -24,6 +25,10 @@
     },
     "fecha_finalizacion": {
       "type": "date"
+    },
+    "url": {
+      "type": "string",
+      "required": true
     }
   }
 }

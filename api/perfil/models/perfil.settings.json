@@ -45,6 +45,11 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "twitter": {
+      "type": "string",
+      "private": false,
+      "required": true
     }
   }
 }

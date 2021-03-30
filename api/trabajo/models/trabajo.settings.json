@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "trabajo",
   "info": {
-    "name": "Trabajo"
+    "name": "Trabajo",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "empresa": {
+    "nombre": {
       "type": "string",
       "required": true,
       "unique": true
@@ -24,6 +25,10 @@
     },
     "anotaciones": {
       "type": "richtext"
+    },
+    "url": {
+      "type": "string",
+      "required": true
     }
   }
 }
